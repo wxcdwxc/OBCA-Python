@@ -1,29 +1,33 @@
-# OBCA
-Optimization-Based Collision Avoidance - a path planner for autonomous navigation
+# OBCA-Python
 
-Paper describing the theory can be found [here](http://arxiv.org/abs/1711.03449).
+本项目基于 [OBCA](https://github.com/XiaojingGeorgeZhang/OBCA)（Optimization-Based Collision Avoidance）原项目，将泊车规划部分的 [Julia](https://julialang.org/) 实现改写为 **Python**，并在原有单车+单挂车的基础上，**增加了双挂车（双挂）的轨迹规划实现**。
 
-*Note*: An OBCA version specialized towards autonomous parking can be found at [H-OBCA](https://github.com/XiaojingGeorgeZhang/H-OBCA).
+原项目论文请见 [arXiv:1711.03449](http://arxiv.org/abs/1711.03449)。
 
-## Short Description
-OBCA is a novel method for formulating collision avoidance constraints. It provides a smooth reformulation of collision avoidance constraints, allowing the use of generic non-linear optimization solvers. 
+## 与原项目的差异
 
-OBCA can be used to in path planning algorithms to generate *high-quality paths* that satisfy the system dynamics as well as satefy constraints. We provide [Julia](https://julialang.org/)-based implementations for a quadcopter navigation problem and for autonomous parking problems.
+- **语言迁移**：将 Julia 泊车规划代码移植为 Python，便于更多开发者使用和扩展
+- **双挂车支持**：在原有 Truck-Trailer 的基础上，新增了双挂车（Truck with Two Trailers）的碰撞约束建模与轨迹优化
+- **可视化**：使用 Pygame / Matplotlib 实现轨迹可视化
 
-## Examples
+## 文件说明
 
+| 文件 | 说明 |
+|------|------|
+| `TrailerParkingOptimization.py` | 单挂车泊车轨迹优化（原项目 Julia 代码的 Python 移植） |
+| `TrailerParkingOptimization2.py` | 双挂车泊车轨迹优化 |
+| `TrailerParkingOptimization3.py` | 双挂车泊车轨迹优化（改进版本） |
+| `ManualDrive.py` | 手动控制界面 |
+| `DualMultWS.py` | 双挂车碰撞约束建模 |
+| `obstHrep.py` | 障碍物 H-表示（half-plane representation） |
+| `A_star/hybrid_a_star.py` | Hybrid A* 路径搜索 |
+| `PyGamePlot*.py` | Pygame 可视化绘图 |
 
-### OBCA for Quadcopter Navigation
-<img src="https://github.com/XiaojingGeorgeZhang/OBCA/blob/master/images/TrajQuad_3D_Video.gif" width="700" />
+## 运行环境
 
-### OBCA for Autonomous Parking 
+依赖：`numpy`, `scipy`, `casadi`, `pygame`, `matplotlib`
 
-#### Backwards Parking
-<img src="https://github.com/XiaojingGeorgeZhang/OBCA/blob/master/images/TrajBack_ParkingVideo.gif" width="700" />
+## 致谢
 
-#### Parallel Parking
-<img src="https://github.com/XiaojingGeorgeZhang/OBCA/blob/master/images/TrajPar_ParkingVideo.gif" width="700" />
-
-#### Parking of Truck with Trailer
-<img src="https://github.com/XiaojingGeorgeZhang/OBCA/blob/master/images/TrajTrailer_ParkingVideo.gif" width="700" />
+本项目源于 [XiaojingGeorgeZhang/OBCA](https://github.com/XiaojingGeorgeZhang/OBCA) 的开源工作，感谢原作者的贡献。
 
