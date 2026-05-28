@@ -23,6 +23,20 @@
 | `A_star/hybrid_a_star.py` | Hybrid A* 路径搜索 |
 | `PyGamePlot*.py` | Pygame 可视化绘图 |
 
+## 效果演示
+
+### 单挂车（Truck-Trailer）泊车
+
+<img src="images/Trailer1.gif" width="600" />
+
+### 双挂车（Truck-Two-Trailers）泊车
+
+<img src="images/Trailer2.gif" width="600" />
+
+### 双挂车泊车（改进版）
+
+<img src="images/Trailer3.gif" width="600" />
+
 ## 运行环境
 
 依赖：`numpy`, `scipy`, `casadi`, `pygame`, `matplotlib`
