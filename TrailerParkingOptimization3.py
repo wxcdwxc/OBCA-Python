@@ -505,7 +505,7 @@ def main():
             visualize(
                 traj,
                 obstacles=obstacles_list,
-                frame_rate=4,
+                frame_rate=5,
                 tractor_length=L,
                 trailer1_length=L_TRAILER1,
                 trailer2_length=L_TRAILER2,
