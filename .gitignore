@@ -8,8 +8,6 @@ Icon?
 __pycache__/
 *.pyc
 .venv/
-*.npz
-*.png
 
 # IDE
 .idea/
