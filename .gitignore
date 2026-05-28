@@ -3,3 +3,19 @@
 *.jl.mem
 deps/deps.jl
 Icon?
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.npz
+*.png
+
+# IDE
+.idea/
+
+# Node
+node_modules/
+
+# Claude
+.claude/
