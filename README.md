@@ -14,9 +14,9 @@
 
 | 文件 | 说明 |
 |------|------|
-| `TrailerParkingOptimization.py` | 单挂车泊车轨迹优化（原项目 Julia 代码的 Python 移植） |
-| `TrailerParkingOptimization2.py` | 双挂车泊车轨迹优化 |
-| `TrailerParkingOptimization3.py` | 双挂车泊车轨迹优化（改进版本） |
+| `TrailerParkingOptimization.py` | 单挂车泊车轨迹优化 |
+| `TrailerParkingOptimization2.py` | 单挂车泊车轨迹优化2 |
+| `TrailerParkingOptimization3.py` | 双挂车泊车轨迹优化 |
 | `ManualDrive.py` | 手动控制界面 |
 | `DualMultWS.py` | 双挂车碰撞约束建模 |
 | `obstHrep.py` | 障碍物 H-表示（half-plane representation） |
