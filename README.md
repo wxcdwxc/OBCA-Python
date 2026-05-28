@@ -25,15 +25,15 @@
 
 ## 效果演示
 
-### 单挂车（Truck-Trailer）泊车
+### 1
 
 <img src="images/Trailer1.gif" width="600" />
 
-### 双挂车（Truck-Two-Trailers）泊车
+### 2
 
 <img src="images/Trailer2.gif" width="600" />
 
-### 双挂车泊车（改进版）
+### 双挂车
 
 <img src="images/Trailer3.gif" width="600" />
 
